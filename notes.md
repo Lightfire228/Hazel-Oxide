@@ -1,0 +1,17 @@
+# Game engine
+- Entry point
+- Application Layer
+- Window Layer
+  - Input
+  - Events
+- Renderer
+- Render API Abstraction
+- Debugging Support
+  - Logging
+  - Profiling
+- Scripting
+- Memory Systems
+- Entity Component System (ECS)
+- Physics
+- File IO / VFS
+- Build System
