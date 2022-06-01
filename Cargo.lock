@@ -3,12 +3,12 @@
 version = 3
 
 [[package]]
-name = "hazel"
+name = "hazel_oxide"
 version = "0.1.0"
 
 [[package]]
 name = "sandbox"
 version = "0.1.0"
 dependencies = [
- "hazel",
+ "hazel_oxide",
 ]

@@ -1,6 +1,6 @@
 
 [workspace]
 members = [
-    "Hazel",
-    "Sandbox",
+    "hazel_oxide",
+    "sandbox",
 ]

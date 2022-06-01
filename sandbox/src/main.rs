@@ -1,9 +1,9 @@
 
-use hazel;
+use hazel_oxide;
 
 fn main() {
     println!("Hello, world!");
 
-    hazel::hi();
+    hazel_oxide::hi();
 
 }
