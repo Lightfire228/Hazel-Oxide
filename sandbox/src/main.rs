@@ -1,9 +1,11 @@
+mod sandbox_app;
 
-use hazel_oxide;
+use sandbox_app::Sandbox;
 
 fn main() {
-    println!("Hello, world!");
 
-    hazel_oxide::hi();
+    let sandbox: Box<Sandbox> = Box::new(Sandbox::new());
+
+    sandbox.run();
 
 }
