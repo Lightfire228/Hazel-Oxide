@@ -1,14 +1,13 @@
-use hazel_oxide::application::Application;
+use hazel_oxide::application::{Application, Run};
 
 pub struct Sandbox {
     pub parent: Box<Application>
 }
 
-impl Sandbox {
-    pub fn run(&self) {
-        self.parent.run();
-    }
+impl Run for Sandbox {}
 
+impl Sandbox {
+    
     pub fn new() -> Sandbox {
         Sandbox {
             parent: Box::new(Application::new()),
