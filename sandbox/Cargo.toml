@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 hazel_oxide = { path = "../hazel_oxide" }
+log         = "0.4"

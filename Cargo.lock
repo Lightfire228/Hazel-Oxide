@@ -251,6 +251,7 @@ name = "sandbox"
 version = "0.1.0"
 dependencies = [
  "hazel_oxide",
+ "log",
 ]
 
 [[package]]

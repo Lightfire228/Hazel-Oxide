@@ -1,4 +1,4 @@
-
+use log4rs;
 
 pub struct Application {
 }
@@ -17,6 +17,7 @@ impl Run for Application {}
 
 impl Application {
     pub fn new() -> Application {
+
         Application {
         }
     }

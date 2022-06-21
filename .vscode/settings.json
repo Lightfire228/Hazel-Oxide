@@ -1,3 +1,8 @@
 {
-    "rust-client.disableRustup": true
+    "rust-client.disableRustup": true,
+    "cSpell.words": [
+        "appenders",
+        "Cherno's",
+        "hlog"
+    ]
 }

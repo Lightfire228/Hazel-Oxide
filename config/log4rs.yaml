@@ -2,18 +2,42 @@ refresh_rate: 30 seconds
 appenders:
   stdout:
     kind: console
-  hazel_oxide:
-    kind: file
-    path: "log/hazel_oxide.log"
     encoder:
-      pattern: "{d} - {m}{n}"
+      pattern: "[{d}] {t}: {m}{n}"
+  core:
+    kind: file
+    path: "log/core.log"
+    encoder:
+      # https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html
+      pattern: "[{d}]: {m}{n}"
+  client:
+    kind: file
+    path: "log/client.log"
+    encoder:
+      pattern: "[{d}]: {m}{n}"
+  all:
+    kind: file
+    path: "log/all.log"
+    encoder:
+      pattern: "[{d}] {t}: {m}{n}"
+
 root:
   level: warn
   appenders:
     - stdout
+
 loggers:
-  hazel_oxide:
-    level: info
+  core:
+    level: trace
     appenders:
-      - hazel_oxide
+      - core
+      - stdout
+      - all
+    additive: false
+  client:
+    level: trace
+    appenders:
+      - client
+      - stdout
+      - all
     additive: false
