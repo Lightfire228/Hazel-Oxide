@@ -2,6 +2,7 @@
     "rust-client.disableRustup": true,
     "cSpell.words": [
         "appenders",
+        "bitflags",
         "Cherno's",
         "hlog"
     ]

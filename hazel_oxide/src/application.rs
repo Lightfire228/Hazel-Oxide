@@ -1,5 +1,3 @@
-use log4rs;
-
 pub struct Application {
 }
 

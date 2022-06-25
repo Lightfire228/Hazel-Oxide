@@ -42,7 +42,9 @@ macro_rules! log_trace {
     }
 }
 
-
-
-
-
+#[macro_export]
+macro_rules! bit {
+    ( $x:literal ) => {
+        1 << $x
+    };
+}
