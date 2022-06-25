@@ -67,3 +67,10 @@ pub trait TEvent {
         (self.get_category_flags() & category.bits) == 0
     }
 }
+
+
+impl ToString for Event {
+    fn to_string(&self) -> String {
+        String::from(&self.name)
+    }
+}

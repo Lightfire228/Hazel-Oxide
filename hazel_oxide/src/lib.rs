@@ -1,3 +1,5 @@
+#[macro_use]
+
 pub mod application;
 pub mod hlog;
 pub mod events;

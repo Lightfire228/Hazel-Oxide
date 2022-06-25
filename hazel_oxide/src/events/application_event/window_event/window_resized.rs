@@ -1,7 +1,7 @@
 use crate::events::event::*;
 use crate::events::event::EventCategory as ec;
 
-struct WindowResizedEvent {
+pub struct WindowResizedEvent {
     pub event: Event,
 
     width:  u32,
